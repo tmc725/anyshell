@@ -1,0 +1,12 @@
+#!/bin/bash
+
+export LESSCHARSET=utf-8
+CURRENT_DIR=`pwd`
+WORKING_DIR=~anyshell
+export SHELLBASE=${WORKING_DIR}
+export IPYTHONDIR=${WORKING_DIR}/ipython
+
+cd $WORKING_DIR
+ipython $@
+
+cd $CURRENT_DIR
